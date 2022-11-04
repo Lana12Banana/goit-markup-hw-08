@@ -1,5 +1,28 @@
 .advantages {
-    display: flex;
+    /*display: flex;*/
+
+    /*@extend %list;*/
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.advantages-item {
+    /*text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color
+    font-size
+    */
+    @media screen and (min-width: 768px) {
+        flex-basis: 50%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: 100% / 3;
+    }
 }
 
 .advantages-item__card {
