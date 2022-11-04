@@ -1,0 +1,36 @@
+
+.occupation-works {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+}
+
+.occupation-works__thumb {
+    position: relative;
+}
+
+.occupation-works__card {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    ;
+}
+
+.occupation-works__desc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
