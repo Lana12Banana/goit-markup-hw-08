@@ -6,6 +6,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
     }
 }
 
@@ -18,18 +19,18 @@
     */
     @media screen and (min-width: 768px) {
         width: 50%;
-        .element {
-                flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
-            }
+        margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 100%;
     }
-}
 
-.advantages-item:not(:last-child) {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+        @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .advantages-item__card {
