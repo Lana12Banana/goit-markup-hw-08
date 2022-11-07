@@ -24,9 +24,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        .element {
-                flex-basis: calc((100% - 8 * значение маржина) / кол-во элементов в строке);
-            }
+        width: calc((100% - 8 * 15px) / 4);
         margin: 15px;
     }
 
