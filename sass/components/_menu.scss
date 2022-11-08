@@ -4,6 +4,10 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-button .icon-close {
@@ -19,7 +23,7 @@
 }
 
 .menu-container {
-    display: none;
+    
 
     position: absolute;
     top: 100%;
@@ -41,6 +45,11 @@
     &.is-open {
         display: block;
     }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
 
 .site-nav, .contacts-header {
     height: 40px;
