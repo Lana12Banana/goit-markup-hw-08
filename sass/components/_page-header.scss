@@ -28,6 +28,10 @@
     display: block;
 }
 
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
 .site-nav .site-nav__item+.site-nav__item {
     margin-left: 50px;
 }
