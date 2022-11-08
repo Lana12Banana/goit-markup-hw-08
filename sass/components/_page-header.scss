@@ -12,6 +12,22 @@
     margin-left: 93px;
 }
 
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+
 .site-nav .site-nav__item+.site-nav__item {
     margin-left: 50px;
 }
@@ -58,3 +74,4 @@
 .site-nav .link--current {
     color: var(--accent-color);
 }
+
