@@ -1,0 +1,100 @@
+.solutions-section {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/solutions/hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-color: #c4c4c4;
+    text-align: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/solutions/hero-mobile@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .solutions-section {
+        //width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/solutions/hero-tablet.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/solutions/hero-tablet@2x.jpg');
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .solutions-section {
+        max-width: 1600px;
+        //width: 1200px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/solutions/hero-desktop.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/solutions/hero-desktop@2x.jpg');
+        }
+    }
+}
+
+.solutions-section__title {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 360px;
+
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 479px) {
+        width: 90vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+.solutions-section__button {
+    width: 200px;
+    height: 50px;
+
+    background-color: $accent-color;
+    color: $primary-white-color;
+
+    @media screen and (min-width: 1200px) {
+        width: 216px;
+
+        &:hover,
+        &:focus {
+            background-color: $dark-accent-color;
+        }
+    }
+}
