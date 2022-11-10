@@ -25,12 +25,11 @@
                 <nav class="main-nav">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
-                            <a href="./index.html"
-                                class="main-nav__link main-nav__link--current">Студія</a>
+                            <a href="./index.html" class="main-nav__link">Студія</a>
                         </li>
                         <li class="main-nav__item">
                             <a href="./portfolio.html"
-                                class="main-nav__link">Портфоліо</a>
+                                class="main-nav__link main-nav__link--current">Портфоліо</a>
                         </li>
                         <li class="main-nav__item">
                             <a href="" class="main-nav__link">Контакти</a>
@@ -42,20 +41,16 @@
                     <li class="header-contacts__item">
                         <a href="mailto:info@devstudio.com"
                             class="header-contacts__link header-contacts__link--email">
-                            <svg class="header-contacts__icon" width="16"
-                                height="12">
-                                <use href="./images/icons.svg#icon-email" />
-                            </svg> info@devstudio.com
-                        </a>
+                            <svg class="header-contacts__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope" />
+                            </svg> info@devstudio.com</a>
                     </li>
                     <li class="header-contacts__item">
                         <a href="tel:+380961111111"
                             class="header-contacts__link header-contacts__link--tel">
-                            <svg class="header-contacts__icon" width="10"
-                                height="16">
+                            <svg class="header-contacts__icon" width="10" height="16">
                                 <use href="./images/icons.svg#icon-smartphone" />
-                            </svg> +38 096 111 11 11
-                        </a>
+                            </svg> +38 096 111 11 11</a>
                     </li>
                 </ul>
                 <ul class="header-social">
@@ -118,13 +113,22 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio1.jpg"
-                                    alt="На фото зображений Macbook" width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-1-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-1-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-1-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-1-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-1-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-1-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-1-450.jpg"
+                                    alt="екран ноутбука"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -145,14 +149,22 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio2.jpg"
-                                    alt="На фото зображені гравці у баскетбол"
-                                    width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-2-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-2-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-2-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-2-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-2-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-2-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-2-450.jpg"
+                                    alt="баскетбол"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -172,14 +184,22 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio3.jpg"
-                                    alt="На фото зображено лого ресторану Seafood"
-                                    width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-3-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-3-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-3-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-3-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-3-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-3-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-3-450.jpg"
+                                    alt="логотип ресторану"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -199,14 +219,22 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio4.jpg"
-                                    alt="На фото зображені чорні навушники"
-                                    width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-4-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-4-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-4-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-4-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-4-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-4-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-4-450.jpg"
+                                    alt="навушники"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -226,13 +254,22 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio5.jpg"
-                                    alt="На фото зображені дві коробки" width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-5-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-5-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-5-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-5-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-5-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-5-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-5-450.jpg"
+                                    alt="коробки"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -252,9 +289,17 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio6.jpg"
-                                    alt="На фото зображений монітор Apple"
-                                    width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-6-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-6-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-6-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-6-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-6-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-6-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-6-450.jpg"
+                                    alt="монітор"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
@@ -279,14 +324,22 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio7.jpg"
-                                    alt="На фото зображений журнал Limited Edition"
-                                    width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-7-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-7-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-7-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-7-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-7-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-7-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-7-450.jpg"
+                                    alt="журнал"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -306,13 +359,21 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio8.jpg"
-                                    alt="На фото зображена етикетка" width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-8-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-8-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-8-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-8-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-8-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-8-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-8-450.jpg"
+                                    alt="ярлик" class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -332,14 +393,22 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-card__link link">
                             <div class="portfolio-card__wrapper">
-                                <img src="./images/portfolio9.jpg"
-                                    alt="На фото зображно друкування на Macbook"
-                                    width="370">
+                                <img srcset="
+                                    ./images/portfolio/portfolio-9-450.jpg 450w, 
+                                    ./images/portfolio/portfolio-9-900.jpg 900w, 
+                                    ./images/portfolio/portfolio-9-354.jpg 354w, 
+                                    ./images/portfolio/portfolio-9-708.jpg 708w, 
+                                    ./images/portfolio/portfolio-9-370.jpg 370w,  
+                                    ./images/portfolio/portfolio-9-740.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    src="./images/portfolio/portfolio-9-450.jpg"
+                                    alt="ноутбук"
+                                    class="portfolio-card__image image">
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">
                                         Ресурс пропонує комплексні пропозиції з
-                                        різним рівнем функціоналу та сервісів. Все
-                                        це дозволить відвідувачу отримати
+                                        різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
@@ -362,91 +431,79 @@
 
     <footer class="page-footer">
         <div class="container page-footer__container">
-    
+
             <div class="contacts">
-                <a href="./index.html" class="logo page-footer__logo">Web<span
-                        class="logo--white">Studio</span></a>
-    
+                <a href="./index.html" class="logo page-footer__logo">Web<span class="logo--white">Studio</span></a>
+
                 <address class="address">
                     <ul class="address-list">
                         <li class="address-list__item">
                             <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                                class="address-list__link address-list__link--white"
-                                target="_blank"
-                                rel="noopener noreferrer nofollow">м. Київ, пр-т
-                                Лесі Українки, 26</a>
+                                class="address-list__link address-list__link--white" target="_blank"
+                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
+                                Українки, 26</a>
                         </li>
                         <li class="address-list__item">
                             <a href="mailto:info@devstudio.com"
                                 class="address-list__link address-list__link--color">info@devstudio.com</a>
                         </li>
                         <li class="address-list__item">
-                            <a href="tel:+380961111111"
-                                class="address-list__link address-list__link--color">+38
+                            <a href="tel:+380961111111" class="address-list__link address-list__link--color">+38
                                 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-    
+
             <div class="social-network">
                 <p class="social-network__text">
-                    Приєднуйтесь
+                    приєднуйтесь
                 </p>
                 <ul class="social-list">
                     <li class="social-list__item">
                         <a href="" class="social-list__link">
-                            <svg class="social-list__icon social-list__icon--dark"
-                                width="44" height="44">
-                                <use
-                                    href="./images/icons.svg#icon-instagram-footer" />
+                            <svg class="social-list__icon social-list__icon--dark" width="44" height="44">
+                                <use href="./images/icons.svg#icon-instagram" />
                             </svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="" class="social-list__link">
-                            <svg class="social-list__icon social-list__icon--dark"
-                                width="44" height="44">
-                                <use
-                                    href="./images/icons.svg#icon-twitter-footer" />
+                            <svg class="social-list__icon social-list__icon--dark" width="44" height="44">
+                                <use href="./images/icons.svg#icon-twitter" />
                             </svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="" class="social-list__link">
-                            <svg class="social-list__icon social-list__icon--dark"
-                                width="44" height="44">
-                                <use
-                                    href="./images/icons.svg#icon-facebook-footer" />
+                            <svg class="social-list__icon social-list__icon--dark" width="44" height="44">
+                                <use href="./images/icons.svg#icon-facebook" />
                             </svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="" class="social-list__link">
-                            <svg class="social-list__icon social-list__icon--dark"
-                                width="44" height="44">
-                                <use
-                                    href="./images/icons.svg#icon-linkedin-footer" />
+                            <svg class="social-list__icon social-list__icon--dark" width="44" height="44">
+                                <use href="./images/icons.svg#icon-linkedin" />
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-    
-    
+
+
             <div class="mailing">
                 <p class="mailing__text">
                     Підпишіться на розсилку
                 </p>
                 <form name="mailing" class="mailing-form">
                     <label class="mailing-form__label">
-                        <input type="email" name="mailing"
-                            class="mailing-form__input" placeholder="E-mail">
+                        <input type="email" name="mailing" class="mailing-form__input" placeholder="E-mail">
                     </label>
                     <button type="submit" class="button mailing-form__button">
                         Підписатися
                         <svg class="mailing-form__icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send-footer"></use>
+                            <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
