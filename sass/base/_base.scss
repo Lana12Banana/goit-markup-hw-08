@@ -1,5 +1,5 @@
 body {
-    color: var(--white-color);
+    color: $primary-text-color;
     background-color: $primary-white-color;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -19,12 +19,6 @@ ul {
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-picture {
     display: block;
     max-width: 100%;
     height: auto;
