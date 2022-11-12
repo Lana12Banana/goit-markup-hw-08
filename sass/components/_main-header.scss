@@ -1,41 +1,60 @@
-.main-header {
+/*.main-header {
     text-align: center;
     padding: 200px 0 200px
-}
+}*/
 
 .overlay {
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+    margin: 0 auto;
+    padding: 118px 0;
 
-@media (min-resolution) {
-    .overlay {
-        
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-bg-480.jpg") no-repeat center/cover, #C4C4C4;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution:192dpi), (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-bg-480@2x.jpg") no-repeat center/cover, #C4C4C4;
+    }
+
+    @media screen and (min-width: $tablet) {
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-bg-768.jpg") no-repeat center/cover, #C4C4C4;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution:192dpi), (min-resolution: 2dppx) {
+            background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-bg-768@2x.jpg") no-repeat center/cover, #C4C4C4;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-bg-1200.jpg") no-repeat center/cover, #C4C4C4;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution:192dpi), (min-resolution: 2dppx) {
+            background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-bg-1200@2x.jpg") no-repeat center/cover, #C4C4C4;
+        }
     }
 }
 
 .main-header__title {
-    margin-top: 0;
+    color: var(--white-color);
+
+    /*margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-    color: var(--white-color);
+    margin-right: auto;*/
+    max-width: 696px;
+    
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
     letter-spacing: 0.06em;
-    margin-bottom: 30px
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .main-header__button {
+    margin-top: 30px;
     display: inline-block;
     border: 1px solid transparent;
     min-width: 216px;
